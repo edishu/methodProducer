@@ -1,0 +1,6 @@
+docker run --name methodKafka -p 9092:9092 \
+-e KAFKA_ENABLE_KRAFT=yes \
+-e KAFKA_CFG_PROCESS_ROLES=broker,controller \
+-e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 \
+-e ALLOW_PLAINTEXT_LISTENER=yes \
+-e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 bitnami/kafka
