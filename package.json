@@ -6,6 +6,7 @@
   "scripts": {
     "ts-prepare": "ts-patch install -s",
     "start:dev": "npm run ts-prepare && ts-node ./src/index.ts",
+    "dev:topic": "npm run ts-prepare && ts-node ./src/topic.ts",
     "start:prod": "node ./build/index.js",
     "build": "tsc && tsc-alias",
     "dev": "nodemon -T ./src/index.ts"
@@ -24,6 +25,7 @@
     "typescript-transform-paths": "^3.4.6"
   },
   "dependencies": {
-    "fast-xml-parser": "^4.3.4"
+    "fast-xml-parser": "^4.3.4",
+    "kafkajs": "^2.2.4"
   }
 }
