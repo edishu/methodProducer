@@ -6,6 +6,7 @@
   "scripts": {
     "ts-prepare": "ts-patch install -s",
     "start:dev": "npm run ts-prepare && ts-node ./src/index.ts",
+    "start:consume": "npm run ts-prepare && ts-node ./src/consumer.ts",
     "dev:topic": "npm run ts-prepare && ts-node ./src/topic.ts",
     "start:prod": "node ./build/index.js",
     "build": "tsc && tsc-alias",
